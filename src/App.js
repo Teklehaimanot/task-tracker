@@ -23,8 +23,7 @@ function App() {
     }
   ]);
   const deleteTask = (id) => {
-    const newTask = tasks.filter(task=>(task.id !== id));
-    setTasks(newTask);
+    setTasks(tasks.filter(task=>(task.id !== id)));
   
   }
   return (
