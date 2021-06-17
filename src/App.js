@@ -1,9 +1,11 @@
+import Header from './component/Header'
 function App() {
   return (
-    <div className="App">
-     <h1>Hello Teklehaimanot</h1>
+    <div className="container">
+      <Header title = {'Task Tracker'}/>
     </div>
   );
 }
 
 export default App;
+
