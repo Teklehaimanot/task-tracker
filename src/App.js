@@ -3,6 +3,7 @@ import Header from './component/Header'
 import Tasks from './component/Tasks'
 import AddTask from './component/AddTask';
 function App() {
+  const [showAddTask, setShowAddTask] = useState(false)
   const [tasks, setTasks] = useState([
     {
       id: 1,
@@ -38,14 +39,17 @@ function App() {
   const addTask = (task) => {
     console.log(task)
     const id = Math.floor(Math.random() * 10000) + 1;
-    const newTask = ({id, ...task});
+    const newTask = ({ id, ...task });
     setTasks([...tasks, newTask])
   }
-
+const toggleAddTask = ()=>{
+  setShowAddTask(!showAddTask);
+}
   return (
     <div className="container">
-      <Header title={'Task Tracker'} />
-      <AddTask   onAdd={addTask} />
+      <Header title={'Task Tracker'} toggleAdd = {toggleAddTask} />
+      {showAddTask?<AddTask onAdd={addTask} />
+      : '' }
       {tasks.length > 0 ?
         <Tasks tasks={tasks}
           onToggle={toggleReminder}

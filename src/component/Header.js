@@ -1,9 +1,9 @@
 
 import Button from './Button'
-const Header = ({ title }) => {
+const Header = ({ title, toggleAdd }) => {
 
     const buttonClicked = () =>{
-        console.log("clicked")
+        toggleAdd()
     }
 
     return (
