@@ -47,7 +47,7 @@ const toggleAddTask = ()=>{
 }
   return (
     <div className="container">
-      <Header title={'Task Tracker'} toggleAdd = {toggleAddTask} />
+      <Header title={'Task Tracker'} showAdd={showAddTask} toggleAdd = {toggleAddTask} />
       {showAddTask?<AddTask onAdd={addTask} />
       : '' }
       {tasks.length > 0 ?
