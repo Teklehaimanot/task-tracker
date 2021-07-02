@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Header from './component/Header'
+import About from './component/About';
+import Footer from './component/Footer';
 import Tasks from './component/Tasks'
 import AddTask from './component/AddTask';
 function App() {
@@ -24,7 +27,7 @@ function App() {
     const res = await fetch(`http://localhost:5000/tasks/${id}`);
     const data = await res.json();
     return data;
-  
+
   }
   const deleteTask = async (id) => {
     await fetch(`http://localhost:5000/tasks/${id}`, {
@@ -72,17 +75,27 @@ function App() {
     setShowAddTask(!showAddTask);
   }
   return (
-    <div className="container">
-      <Header title={'Task Tracker'} showAdd={showAddTask} toggleAdd={toggleAddTask} />
-      {showAddTask ? <AddTask onAdd={addTask} />
-        : ''}
-      {tasks.length > 0 ?
-        <Tasks tasks={tasks}
-          onToggle={toggleReminder}
-          onDelete={deleteTask}
-        /> : 'No Tasks to show'
-      }
-    </div>
+    <Router>
+      <div className="container">
+        <Header title={'Task Tracker'} showAdd={showAddTask} toggleAdd={toggleAddTask} />
+
+        <Route path='/' exact render={(props) => (
+          <>
+            {showAddTask ? <AddTask onAdd={addTask} />
+              : ''}
+            {tasks.length > 0 ?
+              <Tasks tasks={tasks}
+                onToggle={toggleReminder}
+                onDelete={deleteTask}
+              /> : 'No Tasks to show'
+            }
+          </>
+        )} />
+        <Route path='/about' component={About} />
+        <Footer />
+      </div>
+    </Router>
+
   );
 }
 
