@@ -1,15 +1,16 @@
-
+import { useLocation } from 'react-router-dom'
 import Button from './Button'
-const Header = ({ title, toggleAdd, showAdd}) => {
+const Header = ({ title, toggleAdd, showAdd }) => {
 
-    const buttonClicked = () =>{
+    const buttonClicked = () => {
         toggleAdd()
     }
-
+    const location = useLocation();
     return (
-        <header className="header">
+
+       <header className="header">
             <h1>{title}</h1>
-            <Button text = { showAdd ?'Cancel':'Add'} color = {showAdd?'red':'green'} onClick = {buttonClicked}/>
+            {location.pathname ==='/' &&  <Button text={showAdd ? 'Cancel' : 'Add'} color={showAdd ? 'red' : 'green'} onClick={buttonClicked} />}
         </header>
 
     )
