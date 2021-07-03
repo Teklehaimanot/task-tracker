@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Teklehaimanot/task-tracker/static/css/main.006f2865.chunk.css",
-    "main.js": "/Teklehaimanot/task-tracker/static/js/main.b19f81d2.chunk.js",
-    "main.js.map": "/Teklehaimanot/task-tracker/static/js/main.b19f81d2.chunk.js.map",
-    "runtime-main.js": "/Teklehaimanot/task-tracker/static/js/runtime-main.08e15ef4.js",
-    "runtime-main.js.map": "/Teklehaimanot/task-tracker/static/js/runtime-main.08e15ef4.js.map",
-    "static/js/2.1f1b0488.chunk.js": "/Teklehaimanot/task-tracker/static/js/2.1f1b0488.chunk.js",
-    "static/js/2.1f1b0488.chunk.js.map": "/Teklehaimanot/task-tracker/static/js/2.1f1b0488.chunk.js.map",
-    "static/js/3.56275a85.chunk.js": "/Teklehaimanot/task-tracker/static/js/3.56275a85.chunk.js",
-    "static/js/3.56275a85.chunk.js.map": "/Teklehaimanot/task-tracker/static/js/3.56275a85.chunk.js.map",
-    "index.html": "/Teklehaimanot/task-tracker/index.html",
-    "static/css/main.006f2865.chunk.css.map": "/Teklehaimanot/task-tracker/static/css/main.006f2865.chunk.css.map",
-    "static/js/2.1f1b0488.chunk.js.LICENSE.txt": "/Teklehaimanot/task-tracker/static/js/2.1f1b0488.chunk.js.LICENSE.txt"
+    "main.css": "/task-tracker/static/css/main.006f2865.chunk.css",
+    "main.js": "/task-tracker/static/js/main.b19f81d2.chunk.js",
+    "main.js.map": "/task-tracker/static/js/main.b19f81d2.chunk.js.map",
+    "runtime-main.js": "/task-tracker/static/js/runtime-main.6a2e8341.js",
+    "runtime-main.js.map": "/task-tracker/static/js/runtime-main.6a2e8341.js.map",
+    "static/js/2.1f1b0488.chunk.js": "/task-tracker/static/js/2.1f1b0488.chunk.js",
+    "static/js/2.1f1b0488.chunk.js.map": "/task-tracker/static/js/2.1f1b0488.chunk.js.map",
+    "static/js/3.56275a85.chunk.js": "/task-tracker/static/js/3.56275a85.chunk.js",
+    "static/js/3.56275a85.chunk.js.map": "/task-tracker/static/js/3.56275a85.chunk.js.map",
+    "index.html": "/task-tracker/index.html",
+    "static/css/main.006f2865.chunk.css.map": "/task-tracker/static/css/main.006f2865.chunk.css.map",
+    "static/js/2.1f1b0488.chunk.js.LICENSE.txt": "/task-tracker/static/js/2.1f1b0488.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.08e15ef4.js",
+    "static/js/runtime-main.6a2e8341.js",
     "static/js/2.1f1b0488.chunk.js",
     "static/css/main.006f2865.chunk.css",
     "static/js/main.b19f81d2.chunk.js"
